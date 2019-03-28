@@ -7,6 +7,10 @@ module.exports = {
         path: path.resolve(__dirname, 'dist'),
         filename: 'tbtstats.bundle.js'
     },
+    devtool: 'inline-source-map',
+    devServer: {
+        contentBase: './dist'
+    },
     module: {
         rules: [{
                 test: /\.css$/,
