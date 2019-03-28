@@ -1,20 +1,20 @@
-//force webpack to copy index.html
-require('file-loader?name=[name].[ext]!./index.html');
+import _ from "lodash";
+import "./style.css";
+// import Icon from './icon.png';
 
-import _ from 'lodash';
-import './style.css';
-//import Icon from './icon.png';
+// force webpack to copy index.html
+require("file-loader?name=[name].[ext]!./index.html");
 
 function component() {
-    let element = document.createElement('div');
+    let element = document.createElement("div");
 
-    element.innerHTML = _.join(['Hello', 'webpack'], ' ');
-    element.classList.add('hello');
+    element.innerHTML = _.join(["Hello", "webpack"], " ");
+    element.classList.add("hello");
 
     // var myIcon = new Image();
     // myIcon.src = Icon;
 
-    element.appendChild(myIcon);
+    // element.appendChild(myIcon);
 
     return element;
 }
