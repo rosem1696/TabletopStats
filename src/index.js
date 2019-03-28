@@ -2,9 +2,6 @@ import _ from "lodash";
 import "./style.css";
 // import Icon from './icon.png';
 
-// force webpack to copy index.html
-require("file-loader?name=[name].[ext]!./index.html");
-
 function component() {
     let element = document.createElement("div");
 
