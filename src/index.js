@@ -1,14 +1,21 @@
-import _ from "lodash";
-import "./style.css";
-// import Icon from './icon.png';
+// Libraries
+import $ from "jquery";
+import "bootstrap";
+
+// Local
+import "./scss/main.scss";
 
 function component() {
+    $(document).ready(function() {
+        var bsen = (typeof $().modal === "function");
+        console.log(bsen);
+    });
+
     let element = document.createElement("div");
 
-    element.innerHTML = _.join(["Hello", "webpack"], " ");
     element.classList.add("hello");
 
-    // var myIcon = new Image();
+    // var myIcon = new Image();  
     // myIcon.src = Icon;
 
     // element.appendChild(myIcon);

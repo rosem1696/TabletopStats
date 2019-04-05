@@ -19,6 +19,7 @@
         "quotes": ["error", "double"],
         "indent": ["error", 4],
         "space-before-function-paren": ["error", "never"],
-        "semi": ["error", "always"]
+        "semi": ["error", "always"],
+        "no-trailing-spaces": ["error", {"skipBlankLines": true, "ignoreComments": true}]
     }
 }
